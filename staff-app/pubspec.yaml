@@ -1,0 +1,82 @@
+name: staff_app
+description: "TaleemOne ERP — Staff & Faculty Mobile Application - Powered by Barkat Tech"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management & Architecture
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+  get_it: ^7.7.0
+
+  # Networking & HTTP
+  dio: ^5.7.0
+
+  # Security & Enclave Storage
+  flutter_secure_storage: ^9.2.2
+  crypto: ^3.0.5
+  uuid: ^4.5.1
+
+  # Local Offline Database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Navigation & Routing
+  go_router: ^14.2.7
+
+  # Connectivity & Offline Detection
+  connectivity_plus: ^6.0.5
+
+  # Functional Programming & Utilities
+  fpdart: ^1.1.0
+  intl: ^0.20.2
+  cupertino_icons: ^1.0.8
+  image_picker: ^1.2.3
+  local_auth: ^3.0.2
+  mobile_scanner: ^7.4.1
+  printing: ^5.15.0
+  path_provider: ^2.1.6
+  pdf: ^3.13.0
+  pdfrx: ^2.4.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.3
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/images/
+
+  fonts:
+    - family: Alyamama
+      fonts:
+        - asset: assets/fonts/Alyamama.ttf
+
+    - family: NotoSansDevanagari
+      fonts:
+        - asset: assets/fonts/NotoSansDevanagari-Regular.ttf
+        - asset: assets/fonts/NotoSansDevanagari-Bold.ttf
+          weight: 700
